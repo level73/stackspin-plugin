@@ -5,7 +5,7 @@ class WP_Stackspin
     // More plugin we want to "block" from deactivation can be added here
     protected $block_deactivate = array(
             'stackspin-plugin/stackspin-plugin.php',
-
+            'daggerhart-openid-connect-generic/openid-connect-generic.php',
     );
 
     public function __construct()
