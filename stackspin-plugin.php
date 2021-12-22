@@ -17,14 +17,4 @@ require_once (STACKSPIN_PLUGIN_PATH . 'stackspin-plugin.class.php');
 
 $WP_Stackspin = new WP_Stackspin();
 
-add_filter( 'plugin_action_links', 'disable_plugin_deactivation', 10, 4 );
-function disable_plugin_deactivation( $actions, $plugin_file, $plugin_data, $context ) {
 
-    if ( array_key_exists( 'deactivate', $actions ) && in_array( $plugin_file, array(
-            'stackspin-plugin/stackspin-plugin.php',
-            // More plugin we want to "block" from deactivation can be added here
-
-        )))
-        unset( $actions['deactivate'] );
-    return $actions;
-}
