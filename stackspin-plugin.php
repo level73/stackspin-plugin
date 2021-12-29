@@ -5,7 +5,7 @@ Plugin URI:     https://github.com/level73/stackspin-plugin
 Description:    Stackspin plugin for wordpress - to help users understand how the managed instance works
 Version:        1.0
 Author:         Level73
-Author URI:     http://level73.it
+Author URI:     https://level73.it
 License:        MIT
 */
 

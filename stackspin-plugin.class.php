@@ -2,7 +2,7 @@
 
 class WP_Stackspin
 {
-    // More plugin we want to "block" from deactivation can be added here
+    // More plugins we want to "block" from deactivation can be added here
     protected $block_deactivate = array(
             'stackspin-plugin/stackspin-plugin.php',
             'daggerhart-openid-connect-generic/openid-connect-generic.php',
@@ -17,9 +17,10 @@ class WP_Stackspin
 
     public function activate()
     {
-
+        // If anything needs to happen on Activation, code can be added here
     }
 
+    // Disable plugin deactivation for select plugins
     public function disable_plugin_deactivation( $actions, $plugin_file, $plugin_data, $context )
     {
         if ( array_key_exists( 'deactivate', $actions ) && in_array( $plugin_file, $this->block_deactivate))
@@ -27,6 +28,7 @@ class WP_Stackspin
         return $actions;
     }
 
+    // Add Stackspin Menu item and page in the dashboard menu
     public function stackspin_admin_page() {
         add_menu_page(
             __( 'Stackspin', 'stackspin_plugin' ),
