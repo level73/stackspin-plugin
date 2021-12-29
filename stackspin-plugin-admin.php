@@ -1,6 +1,7 @@
-<h1>Stackspin Wordpress Plugin</h1>
+<br />
+<img src="<?php echo plugins_url( 'stackspin-plugin/assets/images/logo_full.svg' ); ?>" alt="Stackspin logo">
 
-<h2>This Wordpress instance is powered by Stackspin</h2>
+<h1>This Wordpress instance is powered by Stackspin</h1>
 
 <p>Welcome to your Wordpress website. It is almost identical to a regular Wordpress instance -- you can install plugins, change settings, add and customize themes, etc.</p>
 
