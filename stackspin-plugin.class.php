@@ -4,7 +4,7 @@ class WP_Stackspin
 {
     // More plugins we want to "block" from deactivation can be added here
     protected $block_deactivate = array(
-            STACKSPIN_PLUGIN_PATH . '/stackspin-plugin.php',
+            STACKSPIN_DIR_NAME . '/stackspin-plugin.php',
             'daggerhart-openid-connect-generic/openid-connect-generic.php',
     );
 
@@ -34,9 +34,9 @@ class WP_Stackspin
             __( 'Stackspin', 'stackspin_plugin' ),
             'Stackspin',
             'manage_options',
-            STACKSPIN_PLUGIN_PATH . '/stackspin-plugin-admin.php',
+            STACKSPIN_DIR_NAME . '/stackspin-plugin-admin.php',
             '',
-            plugins_url( STACKSPIN_PLUGIN_PATH . '/assets/images/logo.png' ),
+            plugins_url( STACKSPIN_DIR_NAME . '/assets/images/logo.png' ),
             98
         );
     }

@@ -9,9 +9,12 @@ Author URI:     https://level73.it
 License:        MIT
 */
 
+list($pluginBaseDir, $pluginFile) = explode('/', plugin_basename(__FILE__));
 
 define( "STACKSPIN_PLUGIN_PATH", plugin_dir_path( __FILE__ ) );
 define( "STACKSPIN_PLUGIN_URL",  plugin_dir_url( __FILE__ ) );
+define( "STACKSPIN_DIR_NAME", $pluginBaseDir);
+
 
 require_once (STACKSPIN_PLUGIN_PATH . 'stackspin-plugin.class.php');
 

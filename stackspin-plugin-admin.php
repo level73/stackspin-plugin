@@ -1,5 +1,5 @@
 <br />
-<img src="<?php echo plugins_url( STACKSPIN_PLUGIN_PATH . '/assets/images/logo_full.svg' ); ?>" alt="Stackspin logo">
+<img src="<?php echo  STACKSPIN_PLUGIN_URL . '/assets/images/logo_full.svg' ; ?>" alt="Stackspin logo">
 
 <h1>This Wordpress instance is powered by Stackspin</h1>
 
